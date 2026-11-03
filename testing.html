@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Evaluation Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .teacher-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .teacher-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .subject {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .status {
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    .pending {
+      background: #f39c12;
+      color: white;
+    }
+
+    .completed {
+      background: #27ae60;
+      color: white;
+    }
+
+    .btn {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+    }
+
+    .btn-evaluate {
+      background: #3498db;
+    }
+
+    .btn-evaluate:hover {
+      background: #2980b9;
+    }
+
+    .btn-disabled {
+      background: #bdc3c7;
+      cursor: not-allowed;
+    }
+
+    .deadline {
+      text-align: right;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Student Teacher Evaluation</h2>
+</header>
+
+<div class="container">
+
+  <div class="deadline">
+    Deadline: May 30, 2026
+  </div>
+
+  <!-- Teacher 1 -->
+  <div class="card">
+    <div class="teacher-info">
+      <span class="teacher-name">Mr. Santos</span>
+      <span class="subject">Mathematics</span>
+    </div>
+
+    <div>
+      <span class="status pending">Pending</span><br>
+      <button class="btn btn-evaluate">Evaluate</button>
+    </div>
+  </div>
+
+  <!-- Teacher 2 -->
+  <div class="card">
+    <div class="teacher-info">
+      <span class="teacher-name">Ms. Cruz</span>
+      <span class="subject">English</span>
+    </div>
+
+    <div>
+      <span class="status completed">Completed</span><br>
+      <button class="btn btn-disabled">Done</button>
+    </div>
+  </div>
+
+  <!-- Teacher 3 -->
+  <div class="card">
+    <div class="teacher-info">
+      <span class="teacher-name">Mrs. Reyes</span>
+      <span class="subject">Science</span>
+    </div>
+
+    <div>
+      <span class="status pending">Pending</span><br>
+      <button class="btn btn-evaluate">Evaluate</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
